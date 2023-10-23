@@ -1,0 +1,77 @@
+:root{
+--clr-DGray: hsl(0, 0%, 63%);
+--clr-black: hsl(0, 0%, 0%);
+--clr-white: hsl(0, 0%, 100%);
+--clr-VDGray: hsl(0, 0%, 27%);
+ 
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.container{
+  width: 85%;
+  max-width: 1150px;
+  margin: 2rem auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: .7rem .9rem;
+
+}
+ 
+ .one{
+    height: 50vh;
+    background-image: url("./images/desktop-image-hero-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+ .nav-lists{
+    display: none;
+ }
+
+.sb-container{
+  width: 85%;
+  max-width: 500px;
+  margin: 2rem auto;
+
+}
+.sb-para{
+color: var(--clr-DGray);
+font-size: 15px;
+padding: 1rem 0;
+}
+.sb-link{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--clr-black);
+  letter-spacing: 4px;
+}
+ 
+.sbh-head{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+@media(min-width:800px){
+  .grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .one{
+     grid-column: span 3
+  }
+  .about-text{
+    grid-column: 2/4
+  }
+}
